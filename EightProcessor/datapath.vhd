@@ -25,6 +25,7 @@ architecture structural of datapath is
     --internal signal 
     signal Q_cnt_8, Q_up_down: STD_LOGIC_VECTOR(3 downto 0);
     signal Q_input: STD_LOGIC_VECTOR(7 downto 0);
+	 signal tmpOutput: STD_LOGIC;	--to be implemented
 
     --component declarations
     component shiftreg is
@@ -87,7 +88,7 @@ begin
     CNT8CHK <= '1' when Q_cnt_8 = "1000" else '0';
     
     --NORing CountBit
-    OUTPUT <= not(Q_up_down(3) OR Q_up_down(2) OR Q_up_down(1) OR Q_up_down(0)) when OUTsig = '1' else 'Z'; --asserting uninitialized when 0
+    OUTPUT <= not(Q_up_down(3) OR Q_up_down(2) OR Q_up_down(1) OR Q_up_down(0)) when OUTsig = '1' else 'X'; --asserting uninitialized when 0
     Done <= '1' when OUTsig = '1' else '0';
 
 end structural;

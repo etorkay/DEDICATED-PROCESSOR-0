@@ -16,9 +16,10 @@ end sevDisplay;
 architecture Behavioral of sevDisplay is
 
 begin
-			with INPUT select OUTPUT <= "0000000001000101" when '0',
-										"0000000100100011" when '1',
-										"0000000000000000" when others; 
+			with INPUT select OUTPUT <= "0000000001000101" when '0', --display no
+										"0000000100100011" when '1', --display yes
+										"0000000000000000" when others;  --dispaly dots
+										--"1111111111111111" when others; 
                                      
                                       
 

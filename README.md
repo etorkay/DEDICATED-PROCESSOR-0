@@ -1,1 +1,9 @@
-# DEDICATED-PROCESSOR-0
+# DEDICATED-PROCESSOR-
+
+### Architecture
+    * Datapath
+    * Control Unit
+    * 7-segment display controller
+    * 
+
+### Components

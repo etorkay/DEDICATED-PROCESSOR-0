@@ -86,3 +86,5 @@ startgroup
 set_property package_pin P16 [get_ports {SEGMENTS[0]}]
 endgroup
 save_constraints
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
