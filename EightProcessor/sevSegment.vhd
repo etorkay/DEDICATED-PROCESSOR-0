@@ -66,6 +66,7 @@ architecture Structural of sevSegment is
 	 component clkCounter
 		port(
             CLK: IN STD_LOGIC;
+				DEBOUNCE: OUT STD_LOGIC;
             CLKOUT: OUT STD_LOGIC
         );
 	 end component;
@@ -74,7 +75,8 @@ architecture Structural of sevSegment is
 begin
     CCLK1: clkCounter port map(
         CLK => CLK,
-        CLKOUT => custCLK
+        CLKOUT => custCLK,
+		  DEBOUNCE => DEBOUNCECLK
     );
 
     CNT1: sevCounter port map(

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/sessi/Documents/Code/Dedicated Processor/EightProcessor/Computer_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="computer" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/computer/input" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">input[7:0]</obj_property>
+      <obj_property name="ObjectShortName">input[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/computer/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/computer/clr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clr</obj_property>
+      <obj_property name="ObjectShortName">clr</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider29" type="divider">
+      <obj_property name="label">17 and 18 CLK</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#ff0000</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/computer/DISP/CCLK1/tmpcount[18]" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">[18]</obj_property>
+      <obj_property name="ObjectShortName">tmpcount[18]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/computer/DISP/CCLK1/tmpcount[17]" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">[17]</obj_property>
+      <obj_property name="ObjectShortName">tmpcount[17]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider32" type="divider">
+      <obj_property name="label">STATES</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#ff00ff</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/computer/PU/CU/ps" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">ps</obj_property>
+      <obj_property name="ObjectShortName">ps</obj_property>
+   </wvobject>
+   <wvobject fp_name="/computer/PU/CU/ns" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">ns</obj_property>
+      <obj_property name="ObjectShortName">ns</obj_property>
+   </wvobject>
+   <wvobject fp_name="/computer/PU/CU/controlsignal" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">controlsignal[6:0]</obj_property>
+      <obj_property name="ObjectShortName">controlsignal[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider36" type="divider">
+      <obj_property name="label">OUTPUT </obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#00ff00</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/computer/PU/DP/output" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">output</obj_property>
+      <obj_property name="ObjectShortName">output</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/computer/PU/DP/ninput" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ninput[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ninput[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/computer/PU/DP/q_cnt_8" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">q_cnt_8[3:0]</obj_property>
+      <obj_property name="ObjectShortName">q_cnt_8[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/computer/PU/DP/q_up_down" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">q_up_down[3:0]</obj_property>
+      <obj_property name="ObjectShortName">q_up_down[3:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/computer/PU/DP/q_input" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">q_input[7:0]</obj_property>
+      <obj_property name="ObjectShortName">q_input[7:0]</obj_property>
+   </wvobject>
+</wave_config>

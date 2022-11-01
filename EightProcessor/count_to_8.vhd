@@ -25,6 +25,7 @@ begin
 
             if (RST = '1') then
                 tmpCount <= "0000"; 	--reset updown counter
+					 cntVal <= 0;
                 
             elsif(CNT8 = '1') then
 

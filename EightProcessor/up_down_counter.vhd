@@ -26,6 +26,7 @@ begin
 
             if (RST = '1') then
                 tmpCount <= "0000"; 	--reset updown counter
+					 cntVal <= 0;
 
             elsif(UPdown = '1' AND CNT = '1') then
                 cntVal <= cntVal + 1;

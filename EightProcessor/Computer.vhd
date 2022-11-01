@@ -19,7 +19,7 @@ end Computer;
 
 architecture Structural of Computer is
 --internal signal
-	signal inputoutput, debounceSig: STD_LOGIC;
+	signal inputoutput, debounceSig, BOUNCECLK: STD_LOGIC;
 
 --compnent declaration
 	component Processor
@@ -34,7 +34,8 @@ architecture Structural of Computer is
 			port(
 			  SEGMENTS: OUT STD_LOGIC_VECTOR(7 downto 0);
 			  SEGsel: OUT STD_LOGIC_VECTOR(3 downto 0);
-			  INPUT: IN STD_LOGIC;	
+			  INPUT: IN STD_LOGIC;
+			  DEBOUNCECLK: OUT STD_LOGIC;			  
 			  CLK: IN STD_LOGIC
 		 );
 	end component;
@@ -51,18 +52,19 @@ begin
 			SEGMENTS => SEGMENTS,
 			 SEGsel => SEGsel,
 			 INPUT => inputoutput,	
+			 DEBOUNCECLK => BOUNCECLK,
 			 CLK => CLK
 	);
 	
 	PU: Processor port map(
 			INPUT => INPUT,
 			CLK => CLK, 
-			CLR =>  debounceSig, --connect to clr '0',
+			CLR => debounceSig, --connect to clr '0', CLR,
 			OUTPUT => inputoutput
 	);
 	
 	DBNT: deBounce port map(
-			CLK => CLK,
+			CLK => BOUNCECLK,
 			INPUT => CLR,
 		   OUTPUT => debounceSig
 	);

@@ -1,0 +1,88 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Mon Oct 31 21:35:35 2022
+# Process ID: 16080
+# Log file: /home/sessi/Documents/Code/Dedicated Processor/EightProcessor/planAhead_run_1/planAhead.log
+# Journal file: /home/sessi/Documents/Code/Dedicated Processor/EightProcessor/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {/home/sessi/Documents/Code/Dedicated Processor/EightProcessor/pa.fromHdl.tcl}
+update_compile_order -fileset sim_1
+set_property iostandard LVCMOS33 [get_ports [list {INPUT[7]} {INPUT[6]} {INPUT[5]} {INPUT[4]} {INPUT[3]} {INPUT[2]} {INPUT[1]} {INPUT[0]}]]
+set_property iostandard LVCMOS33 [get_ports [list {SEGMENTS[7]} {SEGMENTS[6]} {SEGMENTS[5]} {SEGMENTS[4]} {SEGMENTS[3]} {SEGMENTS[2]} {SEGMENTS[1]} {SEGMENTS[0]}]]
+set_property iostandard LVCMOS33 [get_ports [list {SEGsel[3]} {SEGsel[2]} {SEGsel[1]} {SEGsel[0]}]]
+set_property package_pin "" [get_ports [list  CLK]]
+set_property iostandard LVCMOS33 [get_ports [list CLK]]
+set_property iostandard LVCMOS33 [get_ports [list CLR]]
+startgroup
+set_property package_pin T9 [get_ports CLK]
+endgroup
+startgroup
+set_property package_pin M13 [get_ports CLR]
+endgroup
+startgroup
+set_property package_pin E13 [get_ports {SEGsel[3]}]
+endgroup
+startgroup
+set_property package_pin F14 [get_ports {SEGsel[2]}]
+endgroup
+startgroup
+set_property package_pin G14 [get_ports {SEGsel[1]}]
+endgroup
+startgroup
+set_property package_pin D14 [get_ports {SEGsel[0]}]
+endgroup
+startgroup
+set_property package_pin K13 [get_ports {INPUT[7]}]
+endgroup
+startgroup
+set_property package_pin K14 [get_ports {INPUT[6]}]
+endgroup
+startgroup
+set_property package_pin J13 [get_ports {INPUT[5]}]
+endgroup
+startgroup
+set_property package_pin J14 [get_ports {INPUT[4]}]
+endgroup
+startgroup
+set_property package_pin H13 [get_ports {INPUT[3]}]
+endgroup
+startgroup
+set_property package_pin H14 [get_ports {INPUT[2]}]
+endgroup
+startgroup
+set_property package_pin G12 [get_ports {INPUT[1]}]
+endgroup
+startgroup
+set_property package_pin F12 [get_ports {INPUT[0]}]
+endgroup
+set_property package_pin "" [get_ports [list  {SEGMENTS[7]}]]
+set_property package_pin "" [get_ports [list  {SEGMENTS[6]}]]
+set_property package_pin "" [get_ports [list  {SEGMENTS[7]}]]
+set_property package_pin "" [get_ports [list  {SEGMENTS[5]}]]
+startgroup
+set_property package_pin E14 [get_ports {SEGMENTS[7]}]
+endgroup
+startgroup
+set_property package_pin G13 [get_ports {SEGMENTS[6]}]
+endgroup
+startgroup
+set_property package_pin N15 [get_ports {SEGMENTS[5]}]
+endgroup
+startgroup
+set_property package_pin P15 [get_ports {SEGMENTS[4]}]
+endgroup
+startgroup
+set_property package_pin R16 [get_ports {SEGMENTS[3]}]
+endgroup
+startgroup
+set_property package_pin F13 [get_ports {SEGMENTS[2]}]
+endgroup
+startgroup
+set_property package_pin N16 [get_ports {SEGMENTS[1]}]
+endgroup
+startgroup
+set_property package_pin P16 [get_ports {SEGMENTS[0]}]
+endgroup
+save_constraints

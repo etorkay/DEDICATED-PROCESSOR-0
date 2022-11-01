@@ -19,7 +19,7 @@ architecture Behavioral of deBounce is
 
 begin
 
-	ButtonDebounce : process(CLK)
+	ButtonDebounce : process(CLK, tmpD)
 	begin
 		if (RISING_EDGE(CLK)) then
 			tmpD <= INPUT;
