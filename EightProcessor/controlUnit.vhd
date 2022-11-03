@@ -21,7 +21,7 @@ end controlUnit;
 
 --architecture
 architecture Structural of controlUnit is
-    type state_type is (ST0, ST1, ST2, ST3, ST4, ST5, ST6, ST7, ST8,ST9);
+    type state_type is (ST0, ST1, ST2, ST3, ST4, ST5, ST6, ST7);
     signal PS, NS: state_type;
     signal controlSignal: STD_LOGIC_VECTOR(6 downto 0);
 
